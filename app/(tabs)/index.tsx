@@ -36,7 +36,6 @@ export default function TabOneScreen() {
   return(
     <View style={styles.container}>
 
-
       <Contador inicial={100}/>
     </View>
   );
