@@ -12,8 +12,23 @@ const Pisca=Comp=>{
     }, 1000);
 
     return ()=>{clearInterval(toggle)}
+    
   })
+  if(!isShowingText){
+    return null   
+  }
 
+  return <Text>{Comp.Text}</Text>
+
+}
+
+const piscaApp=()=>{
+  return(
+    <View>
+      <Pisca text='Vamos piscar'/>
+      <Pisca text='SIM, PISCANDO É BOM'/>
+    </View>
+  )
 }
 
 
@@ -29,4 +44,9 @@ export default function TabOneScreen() {
 
 const styles = StyleSheet.create({
   container:{flexGrow:1,gap:10,justifyContent:'center',alignItems:'center',backgroundColor:"#1532c181"}
+  ,tela1:{
+    flexGrow:1, backgroundColor:"green", alignItems:"center",justifyContent:"center"
+  }
+
+
 });
