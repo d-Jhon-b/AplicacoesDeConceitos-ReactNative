@@ -10,6 +10,8 @@ const Pisca=Comp=>{
     const toggle = setInterval(() => {
         setIsShowingText(!isShowingText)
     }, 1000);
+
+    return ()=>{clearInterval(toggle)}
   })
 
 }
